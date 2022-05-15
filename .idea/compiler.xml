@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="spic-backend" target="11" />
+      <module name="spic-backend" target="9" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
