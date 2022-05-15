@@ -1,28 +1,31 @@
 package spic.backend.icd;
 
 public class Category {
-    public Category(String name, String photo) {
-        this.name = name;
-        this.photo = photo;
+    private String CategoryName;
+    private String CategoryPicture;
+
+    public Category(String categoryName, String categoryPicture) {
+        this.CategoryName = categoryName;
+        this.CategoryPicture = categoryPicture;
     }
 
-    private String name;
+    public Category() {
 
-    public String getName() {
-        return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public String getCategoryName() {
+        return CategoryName;
     }
 
-    public String getPhoto() {
-        return photo;
+    public void setCategoryName(String categoryName) {
+        this.CategoryName = categoryName;
     }
 
-    public void setPhoto(String photo) {
-        this.photo = photo;
+    public String getCategoryPicture() {
+        return CategoryPicture;
     }
 
-    private String photo;
+    public void setCategoryPicture(String categoryPicture) {
+        this.CategoryPicture = categoryPicture;
+    }
 }

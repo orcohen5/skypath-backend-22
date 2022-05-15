@@ -4,7 +4,6 @@ import org.apache.commons.io.FileUtils;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
-import spic.backend.icd.Category;
 import spic.backend.icd.Photo;
 import spic.backend.icd.Request;
 

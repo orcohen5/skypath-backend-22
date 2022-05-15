@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/hackaton.iml" filepath="$PROJECT_DIR$/hackaton.iml" />
       <module fileurl="file://$PROJECT_DIR$/spic-backend.iml" filepath="$PROJECT_DIR$/spic-backend.iml" />
     </modules>
   </component>
