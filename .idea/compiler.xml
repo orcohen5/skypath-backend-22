@@ -12,13 +12,13 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="backend" target="11" />
-      <module name="spic-backend" target="11" />
+      <module name="spic-backend" target="8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="backend" options="-parameters" />
-      <module name="spic-backend" options="-parameters" />
+      <module name="spic-backend" options="" />
     </option>
   </component>
 </project>

@@ -3,14 +3,14 @@ package spic.backend.repository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
 import spic.backend.icd.Category;
 
 import java.util.List;
 
-@Repository
+@Service
 public class CategoryRepository {
-    private static final String TABLE_NAME = "categories_t";
+    private static final String TABLE_NAME = "Categories";
 
     @Autowired
     private JdbcTemplate jdbcTemplate;
@@ -28,14 +28,13 @@ public class CategoryRepository {
     }
 
     public void createNewCategory(Category category) {
-    String sql =
-        "INSERT INTO " + TABLE_NAME + " VALUES (? , ?)";
+        String sql = "INSERT INTO " + TABLE_NAME + " VALUES (" + category.getCategoryName() + " , " + category.getCategoryPicture() + ")";
 
-        jdbcTemplate.update(sql, category.getCategoryName(), category.getCategoryPicture());
+        jdbcTemplate.execute(sql);
     }
 
     public void createUserCategoryTable(int userId) {
-        String sql = "CREATE TABLE " + userId + TABLE_NAME + "(NAME TEXT PRIMARY_KEY, FILE TEXT)";
+        String sql = "CREATE TABLE " + TABLE_NAME + "_" + userId + "(CategoryName TEXT PRIMARY_KEY, CategoryPicture TEXT)";
 
         jdbcTemplate.execute(sql);
     }

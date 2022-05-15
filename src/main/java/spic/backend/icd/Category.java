@@ -1,6 +1,5 @@
 package spic.backend.icd;
 
-
 public class Category {
     private String CategoryName;
     private String CategoryPicture;
@@ -30,4 +29,3 @@ public class Category {
         this.CategoryPicture = categoryPicture;
     }
 }
-
